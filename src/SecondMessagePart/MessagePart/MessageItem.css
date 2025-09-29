@@ -1,0 +1,183 @@
+img {
+  pointer-events: none;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start;
+}
+
+.messageTop {
+    display: flex;
+    position: relative;
+}
+
+.messageTop div {
+    display: flex;
+    flex-direction: column;
+}
+
+.messageImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.messageText {
+    background-color: #e5e5ea;
+    color: black;
+    border-radius: 16px 16px 16px 0;
+    padding: 8px 12px;
+    position: relative;
+    align-self: flex-end;
+    margin-left: 10px;
+    max-width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  
+  }
+
+  .fileMessage {
+    margin-right: 30px;
+  }
+
+  .fileMessage .picturePart {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .fileMessage .picturePart img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    transition: .2s ease;
+  }
+
+  .fileMessage:hover .picturePart img {
+    transform-origin: center;
+    transform: scale(1.1);
+    transition: .2s ease;
+  }
+
+  .messageText::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-right: 8px solid #e5e5ea;
+    border-top: 8px solid transparent;
+    border-bottom: 0px solid transparent;
+}
+  
+  body.dark-mode .messageText {
+    background-color: #3d4044;
+    color: white;
+  }
+
+  body.dark-mode .messageText::before {
+    border-right: 8px solid #3d4044;
+  }
+  
+
+.timestamp {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: 4px;
+    display: block;
+    text-align: right;
+  }  
+
+.message.own {
+    margin-right: 20px;
+    align-items: flex-end;
+}
+
+.message.own .timestamp {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.message.own .messageImg {
+    position: absolute;
+    right: -20px;
+}
+
+.message.own .messageText {
+    background-color: #007bff;
+    margin-right: 30px;
+    color: white;
+    border-radius: 16px 16px 0 16px;
+    padding: 8px 12px;
+    position: relative;
+    align-self: flex-end;
+  }
+  
+  .message.own .messageText::after {
+    content: '';
+    position: absolute;
+    right: -7px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid #007bff;
+    border-top: 8px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+
+  body.dark-mode .message.own .messageText {
+    background-color: #5b6df7;
+  }
+
+  body.dark-mode .message.own .messageText::after {
+    border-left: 8px solid #5b6df7;
+  }
+
+  .message.own .messageText::before {
+    content: '';
+    display: none;
+  }
+
+.messageDiv {
+  position: relative;
+}
+
+.contextDivBar {
+  width: 130px;
+  height: 90px;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 23px rgba(27, 27, 27, 0.276);
+}
+
+.contextDivBar span {
+  position: absolute;
+  width: 130px;
+  height: 30px;
+  cursor: pointer;
+  align-items: center;
+  padding-left: 20px;
+  transition: .2s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.contextDivBar span:nth-child(2) {
+  margin-top: 30px;
+}
+
+.contextDivBar span:nth-child(3) {
+  margin-top: 60px;
+}
+
+.contextDivBar span:hover {
+  background: rgb(192, 192, 192);
+}

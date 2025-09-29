@@ -1,0 +1,138 @@
+
+.profileSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileMenu {
+    width: 330px;
+    height: 70%;
+    border-radius: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 5px rgb(210, 210, 210);
+}
+
+.topbarSpan {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+}
+
+.topbarSpan .exitBtnSpan {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    margin: 20px;
+    margin-top: 20px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbarSpan .exitBtnSpan::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: black;
+    transform: rotate(-45deg);
+}
+.topbarSpan .exitBtnSpan::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+.topbarSpan h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px;
+    color: rgb(31, 31, 31);
+}
+
+.profileInfoFooter {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 70px;
+}
+
+.profileInfoFooter .profileInfoLabel {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.profileInfoLabel .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; 
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden; 
+  background-color: #f0f0f0; 
+}
+
+.profileInfoLabel .editPartSpan {
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.avatar img {
+  object-fit: cover; 
+  width: 100%; 
+  height: 100%; 
+  transform: scale(1.2);
+}
+
+.profileInfoLabel .editPartSpan .nameTitle {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.profileInfoLabel .editPartSpan p {
+    font-size: 13px;
+    color: #008B8B;
+}
+
+
+@media (max-width: 500px) {
+    .profileMenu {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,49 @@
+.pictureSection {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(221, 221, 221);
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pictureSection img{
+    width: 100%;
+    max-width: 400px;
+    transform: scale(1.2);
+}
+
+.pictureSection .exitBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.pictureSection .exitBtn:hover {
+    background: rgb(212, 212, 212);
+}
+
+.exitBtn::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: gray;
+    transform: rotate(45deg);
+}
+
+.exitBtn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: gray;
+    transform: rotate(-45deg);
+}

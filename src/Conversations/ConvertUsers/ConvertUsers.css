@@ -1,0 +1,198 @@
+
+.UserItem {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.UserItem-saved-message {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.UserItem-saved-message:hover {
+    background: #cdcdcd;
+}
+
+.UserItem.selected {
+    background: #cdcdcd;
+}
+
+.UserItem:hover {
+    background: #cdcdcd;
+}
+
+body.dark-mode .UserItem.selected {
+    background: #5a5a5a;
+}
+
+body.dark-mode .UserItem:hover {
+    background: #5a5a5a;
+}
+
+.styleSpan {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contactAvatarSpan {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.contact-saved-span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+    background: #008B8B;
+}
+
+.contactAvatarSpan img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.contact-saved-span img {
+    width: 27px;
+    height: 27px;
+    object-fit: cover;
+}
+
+.SecondSpan {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body.dark-mode .username {
+    color: white;
+}
+
+.username {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto 0;
+}
+
+.saved-username {
+    font-size: 15px;
+}
+
+body.dark-mode .lastMessage {
+    color: white;
+}
+
+.lastMessage {
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: black;
+    white-space: nowrap;    
+    overflow: hidden;
+}
+
+.savedBottomMessage {
+    width: 100%;
+    font-size: 13px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 65, 65);
+    margin-bottom: 5px;
+}
+
+.menuDiv {
+    position: absolute;
+    width: 190px;
+    border-radius: 2px;
+    background: white;
+    box-shadow: 0 0 5px rgb(217, 217, 217);
+    display: flex;
+    z-index: 100;
+    cursor: pointer;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menuDiv span {
+    width: 100%;
+    height: 35px;
+    font-size: 13px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    align-items: center;
+    gap: 12px;
+}
+
+.menuDiv span img {
+    width: 15px;
+    height: 15px;
+}
+
+.menuDiv span:hover{
+    background: rgb(242, 242, 242);
+}
+
+.menuDiv .deleteSpan {
+    color: red;
+}
+
+@media (max-width: 500px) {
+    .UserItem {
+        height: 70px;
+    }
+
+    .styleSpan {
+        margin-left: 20px;
+    }
+
+    .userImage {
+        width: 47px;
+        height: 47px;
+    }
+
+    .username {
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .lastMessage {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 450px) {
+    .SecondSpan {
+        border-bottom: 1px solid rgb(219, 219, 219);
+    }
+}

@@ -1,0 +1,530 @@
+img {
+    pointer-events: none;
+}
+
+body.activeSection .sectionMenu{
+    transform: translate(250px);
+}
+
+body.activeSection .sectionItems {
+    opacity: .6;
+}
+
+body.dark-mode .FirstSection {
+    background: rgba(29, 29, 29, 0.959);
+}
+
+body.dark-mode .sectionMenu {
+    box-shadow: 0 0 10px ;
+}
+
+.mainConversationSection {
+    width: 300px;
+    height: 100%;
+    display: flex;
+}
+
+body.dark-mode .FirstSection {
+    border-right: 1px solid rgb(130, 130, 130);
+}
+
+.menuSaction {
+    width: 300px;
+    height: 100%;
+    background: white;
+    z-index: 20;
+}
+
+.FirstSection {
+    width: 600px;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-right: 1px solid rgb(227, 227, 227);
+    transition: .2s;
+    margin-left: -300px;
+}
+
+body.dark-mode .sectionMenu {
+    background: rgb(37, 37, 37);
+}
+
+.sectionMenu {
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: 5px 0 10px rgba(236, 236, 236, 0.486);
+    transition: .2s;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.firstSectionMenuPart {
+    width: 100%;
+    height: 130px;
+}
+
+.sectionMenu .logoutBtn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    align-content: center;
+    justify-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.logoutBtn:hover {
+    background: rgb(237, 237, 237);
+}
+.logoutBtn img {
+    width: 20px;
+    height: 20px;
+    transform: translate(2px);
+}
+
+.logoutBtn img:nth-child(2) {
+    display: none;
+}
+
+.sectionMenu .userInfoDiv {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInfoDiv h2 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 7px;
+    margin-left: 2px;
+}
+
+.avatarImgSpan {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatarImgSpan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+
+body.dark-mode .userInfoDiv h2 {
+    color: white;
+}
+
+.menuSectionItemMode {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    width: 250px;
+    height: 50px;
+    border-top: 1px solid rgba(200, 200, 200, 0.301);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.311);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuSectionItemMode div{
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: inset 0 0 5px gray;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menuSectionItemMode div div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgb(66, 66, 66);
+    margin: 3px;
+    border: none;
+    position: absolute;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+.menuSectionItem {
+    position: absolute;
+    right: 0;
+    top: 180px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.311);
+    transition: .2s ease-in-out;
+}
+
+.menuSectionItem.group {
+    top: 230px;
+}
+
+.menuSectionItem:hover {
+    background: rgb(224, 224, 224);
+}
+
+.menuSectionItem.profile img {
+    width: 16px;
+    height: 17px;
+}
+
+body.dark-mode .menuSectionItem:hover {
+    background: rgb(57, 57, 57);
+}
+
+.menuSectionItem img {
+    width: 22px;
+    height: 22px;
+}
+
+.menuSectionItem p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+body.dark-mode .menuSectionItem p {
+    color: white;
+}
+
+body.dark-mode .menuSectionItemMode div div {
+    background: white;
+    box-shadow: 0 0 5px rgb(149, 149, 149);
+    right: 0;
+}
+
+.menuSectionItemMode div div img {
+    width: 15px;
+    height: 15px;
+}
+
+body.dark-mode .menuSectionItemMode div h2 {
+    margin-left: 25px;
+}
+
+.menuSectionItemMode div h2{
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 30px;
+}
+
+.sectionItems {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.FirstSection.sectionActive {
+    margin-left: -340px;
+    transition: .2s;
+}
+
+.FirstSection.sectionActive .SearchUsers {
+    width: 60%;
+}
+
+.TopMenuAndSearchUsers {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.TopMenuAndSearchUsers .menuBurgerDiv {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.TopMenuAndSearchUsers.hideBars .menuBurgerDiv{
+    display: none;
+}
+
+.TopMenuAndSearchUsers.hideBars .SearchUsers{
+    width: 90%;
+}
+
+body.dark-mode .menuBurgerDiv span {
+    background: white;
+}
+
+.menuBurgerDiv span {
+    width: 18px;
+    height: 1px;
+    background: rgb(67, 67, 67);
+}
+
+.talkTitle {
+    display: none;
+}
+
+.SearchUsers {
+    width: 83%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(223, 223, 223, 0.7);
+    background: rgba(243, 243, 243, 0.723);
+    display: flex;
+    align-items: center;
+}
+
+.SearchUsersInput {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    border: none;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.chatsFooter {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.chatsFooter span{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 13px;
+    height: 100%;
+    margin-bottom: 3px;
+}
+
+.chatsFooter span:nth-child(1) {
+    border-bottom: 1.5px solid white;
+}
+
+body.dark-mode .SearchUsers {
+    background: transparent;
+}
+
+body.dark-mode .SearchUsersInput {
+    color: white;
+}
+
+.userItemsSection {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    overflow-y: auto;
+}
+
+.userItemsSection::-webkit-scrollbar {
+    width: .3rem;
+    background: rgb(220, 220, 220);
+}
+
+.userItemsSection::-webkit-scrollbar-thumb {
+    width: .3rem;
+    background: rgb(150, 150, 150);
+    border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+    .FirstSection {
+        width: 800px;
+    }
+
+    body.messageActive .FirstSection {
+        width: 200px;
+    }
+    
+    .mainConversationSection {
+        width: 100%;
+    }
+
+    .sectionMenu {
+        box-shadow: 0 0 0;
+    }
+
+    .logoutBtn img:nth-child(1) {
+        display: none;
+    }
+
+    .logoutBtn img:nth-child(2) {
+        display: block;
+    }
+
+    .firstSectionMenuPart {
+        background: #008B8B;
+        color: white;
+    }
+
+    body.activeSection .sectionMenu {
+        box-shadow: 5px 0 10px rgba(133, 133, 133, 0.723);
+    }
+
+    .chatsFooter {
+        left: 0;
+    }
+
+    .SearchUsers {
+        width: 100%;
+    }
+
+    .sectionItems {
+        width: 500px;
+    }
+
+    .TopMenuAndSearchUsers {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+        background: #008B8B;
+        margin-top: 0;
+    }
+
+    .TopMenuAndSearchUsers .menuBurgerDiv {
+        position: absolute;
+        left: 20px;
+        top: 37.5px;
+    }
+
+    .talkTitle {
+        display: block;
+        color: white;
+        position: absolute;
+        left: 70px;
+        top: 30px;
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 23px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+
+    .menuBurgerDiv span{
+        height: 1.5px;
+        background: white;
+    }
+
+    .TopMenuAndSearchUsers .SearchUsers {
+        width: 80vw;
+        padding-right: 10px;
+        position: absolute;
+        left: 50px;
+        top: 30px;
+        justify-content: end;
+        background: transparent;
+        border: none;
+    }
+
+    .searchIconBtn {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .SearchUsers input {
+        display: none;
+    }
+
+    .TopMenuAndSearchUsers.hideBars {
+        height: 120px;
+    }
+
+    .TopMenuAndSearchUsers.hideBars .SearchUsers{
+        width: 80vw;
+        background: #005d5d;
+    }
+
+    .TopMenuAndSearchUsers.hideBars .talkTitle {
+        display: none;
+    }
+
+    .TopMenuAndSearchUsers.hideBars .searchIconBtn {
+        display: none;
+    }
+
+
+    .TopMenuAndSearchUsers.hideBars .SearchUsers input {
+        display: flex;
+        color: white;
+    }
+
+    .TopMenuAndSearchUsers.hideBars .chatsFooter {
+        display: none;
+    }
+
+    .userItemsSection {
+        margin-top: 0;
+        overflow-y: auto;
+    }
+
+    .searchIcon {
+        display: block;
+    }
+
+    .chatsFooter {
+        display: flex;
+    }
+
+    .TopMenuAndSearchUsers .menuBurgerDiv {
+        justify-content: space-evenly;
+    }
+
+    .menuBurgerDiv span{
+        height: 2px;
+    }
+
+    body.dark-mode .sectionMenu {
+        box-shadow: 0 0 10px black ;
+    }
+}

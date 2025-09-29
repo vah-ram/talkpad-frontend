@@ -1,0 +1,311 @@
+img {
+    pointer-events: none;
+}
+
+.allDiv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formInput {
+    width: 400px;
+    border-radius: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.formInput.loginform {
+    width: 380px;
+    padding: 20px;
+    position: relative;
+}
+
+.formInput span{
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.checkboxWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    bottom: 170px;
+  }
+
+  .formInput.loginform .my-google-btn {
+    width: 240px;
+    height: 38px;
+  }
+
+  .formInput.loginform .my-google-btn {
+    margin-top: 20px;
+    transform: translate(0,15px);
+  }
+
+  .my-google-btn {
+    width: 250px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid rgb(208, 208, 208);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+  }
+
+  .my-google-btn img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .my-google-btn p {
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  
+  .customCheckbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+    user-select: none;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  .customCheckbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .customCheckbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    background-color: white;
+    border: 2px solid #555;
+    border-radius: 3px;
+  }
+  
+  .customCheckbox input:checked ~ .checkmark {
+    background-color: #005d5d;
+    border-color: #005d5d;
+  }
+  
+  .customCheckbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .customCheckbox input:checked ~ .checkmark::after {
+    display: block;
+  }
+
+.formInput span label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 15px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.formInput span #usernameInput {
+    position: absolute;
+    bottom: 0;
+}
+
+.formInput span #emailInput {
+    position: absolute;
+    bottom: 0;
+}
+
+.formInput .passwordInput {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.formInput .passwordInput input {
+    border-radius: 0;
+}
+
+.formInput .titleInput {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInput .titleInput img {
+    width: 43px;
+    height: 43px;
+    margin-right: 5px;
+}
+
+.titleInput h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #005d5d;
+}
+
+.formInput input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+.formInput .passwordInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.formInput .passwordInput img {
+    width: 20px;
+    height: 20px;
+}
+
+.passwordInput input {
+    width: 86%;
+    border: none;
+}
+
+.passwordInput #eyeDiv {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formInput .googleLoginBtn {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    background: white;
+    border: 1px solid rgb(196, 196, 196);
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.formInput .googleLoginBtn img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+}
+
+.formInput.loginform .inputBtn {
+    margin-top: 25px;
+}
+
+.formInput .inputBtn {
+    width: 80%;
+    height: 45px;
+    background: #005d5d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.formInput .inputBtn:hover {
+    opacity: .9;
+}
+
+.bottomLink {
+    font-size: 14px;
+}
+
+.bottomLink .link {
+    color: #005d5d;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+    .formInput {
+        box-shadow: 0px 0px 0px;
+    }
+
+    .my-google-btn {
+        width: 200px;
+        height: 35px;
+        margin-top: 5px;
+    }
+
+    .my-google-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .my-google-btn p {
+        font-size: 13px;
+    }
+
+    .formInput.loginform .my-google-btn {
+        width: 190px;
+        height: 33px;
+      }
+      
+    .formInput.loginform .my-google-btn p {
+        font-size: 13px;
+    }
+
+    .formInput span label {
+        font-size: 14px;
+    }
+
+    .checkboxWrapper {
+        bottom: 163px;
+    }
+}
